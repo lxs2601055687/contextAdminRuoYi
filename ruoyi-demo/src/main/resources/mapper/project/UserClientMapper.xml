@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.mapper.UserClientMapper">
+
+    <resultMap id="BaseResultMap" type="com.ruoyi.project.model.entity.User">
+            <id property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="academy" column="academy" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="gender" column="gender" jdbcType="TINYINT"/>
+            <result property="role" column="role" jdbcType="VARCHAR"/>
+            <result property="number" column="Number" jdbcType="VARCHAR"/>
+            <result property="studentClass" column="class" jdbcType="VARCHAR"/>
+            <result property="grade" column="grade" jdbcType="VARCHAR"/>
+            <result property="specializedSubject" column="specialized_Subject" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="invitation" column="Invitation" jdbcType="VARCHAR"/>
+            <result property="profile" column="profile" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        uid,name,email,
+        academy,deleted,gender,
+        role,I_d_Number,studentClass,
+        grade,specialized_Subject,password,phone,Invitation,profile
+    </sql>
+</mapper>

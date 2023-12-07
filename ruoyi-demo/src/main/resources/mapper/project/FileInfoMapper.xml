@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.mapper.FileInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.ruoyi.project.model.entity.FileInfo">
+            <id property="id" column="Id" jdbcType="TINYINT"/>
+            <result property="activityId" column="activity_id" jdbcType="VARCHAR"/>
+            <result property="teamId" column="team_id" jdbcType="VARCHAR"/>
+            <result property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="ossId" column="oss_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        Id,activity_id,team_id,
+        uid,url,deleted,
+        update_by,update_time,create_by,
+        create_time,oss_id
+    </sql>
+</mapper>

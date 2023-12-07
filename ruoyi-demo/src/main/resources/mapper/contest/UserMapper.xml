@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.contest.mapper.UserMapper">
+
+    <resultMap type="com.ruoyi.contest.domain.User" id="UserResult">
+        <result property="uid" column="uid"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="academy" column="academy"/>
+        <result property="deleted" column="deleted"/>
+        <result property="gender" column="gender"/>
+        <result property="role" column="role"/>
+        <result property="number" column="Number"/>
+        <result property="studentClass" column="student_Class"/>
+        <result property="grade" column="grade"/>
+        <result property="specializedSubject" column="specialized_Subject"/>
+        <result property="password" column="password"/>
+        <result property="phone" column="phone"/>
+        <result property="invitation" column="Invitation"/>
+        <result property="id" column="id"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>

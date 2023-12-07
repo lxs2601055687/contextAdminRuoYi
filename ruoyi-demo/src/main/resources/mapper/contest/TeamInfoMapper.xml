@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.contest.mapper.TeamInfoMapper">
+
+    <resultMap type="com.ruoyi.contest.domain.TeamInfo" id="TeamInfoResult">
+        <result property="id" column="id"/>
+        <result property="teamName" column="team_name"/>
+        <result property="teamLeaderName" column="team_leader_name"/>
+        <result property="deleted" column="deleted"/>
+        <result property="track" column="track"/>
+        <result property="activityName" column="activity_name"/>
+        <result property="teacher" column="teacher"/>
+        <result property="teacherMember" column="teacher_member"/>
+        <result property="teamMemberName" column="team_member_name"/>
+        <result property="teamMemberId" column="team_member_id"/>
+        <result property="teamId" column="team_id"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>

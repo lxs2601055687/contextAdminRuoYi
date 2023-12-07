@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.contest.mapper.IndividualRegistrationMapper">
+
+    <resultMap type="com.ruoyi.contest.domain.IndividualRegistration" id="IndividualRegistrationResult">
+        <result property="name" column="name"/>
+        <result property="uid" column="uid"/>
+        <result property="id" column="id"/>
+        <result property="academy" column="academy"/>
+        <result property="specializedSubject" column="specialized_Subject"/>
+        <result property="activityId" column="activity_id"/>
+        <result property="activityName" column="activity_name"/>
+    </resultMap>
+
+
+</mapper>

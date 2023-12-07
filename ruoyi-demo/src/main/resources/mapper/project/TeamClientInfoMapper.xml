@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.mapper.TeamInfoClientMapper">
+
+    <resultMap id="BaseResultMap" type="com.ruoyi.project.model.entity.TeamClientInfo">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="teamName" column="team_name" jdbcType="VARCHAR"/>
+            <result property="teamLeaderName" column="team_leader_name" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="track" column="track" jdbcType="VARCHAR"/>
+            <result property="activityName" column="activity_name" jdbcType="VARCHAR"/>
+            <result property="teacher" column="teacher" jdbcType="VARCHAR"/>
+            <result property="teacherMember" column="teacher_member" jdbcType="VARCHAR"/>
+            <result property="teamMemberName" column="team_member_name" jdbcType="VARCHAR"/>
+            <result property="teamMemberId" column="team_member_id" jdbcType="VARCHAR"/>
+            <result property="teamId" column="team_id" jdbcType="INTEGER"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,team_name,team_leader_name,
+        deleted,track,activity_name,
+        teacher,teacher_member,team_member_name,
+        team_member_id,team_id,create_by,
+        create_time,update_by,update_time
+    </sql>
+</mapper>

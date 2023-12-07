@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.mapper.ProjectClientMapper">
+
+    <resultMap id="BaseResultMap" type="com.ruoyi.project.model.entity.Project">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="web" column="web" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="projectName" column="project_name" jdbcType="VARCHAR"/>
+            <result property="projectId" column="project_id" jdbcType="VARCHAR"/>
+            <result property="zipUrl" column="zip_url" jdbcType="VARCHAR"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="disk" column="disk" jdbcType="VARCHAR"/>
+            <result property="teamId" column="team_id" jdbcType="VARCHAR"/>
+            <result property="teamName" column="team_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,web,description,
+        project_name,project_id,zip_url,
+        create_by,create_time,update_by,
+        update_time,disk,team_id,
+        team_name,status
+    </sql>
+</mapper>

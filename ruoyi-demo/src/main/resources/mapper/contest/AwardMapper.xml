@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.contest.mapper.AwardMapper">
+
+    <resultMap type="com.ruoyi.contest.domain.Award" id="AwardResult">
+        <result property="id" column="id"/>
+        <result property="status" column="status"/>
+        <result property="teamId" column="team_id"/>
+        <result property="teamName" column="team_name"/>
+        <result property="activityName" column="activity_name"/>
+        <result property="ossId" column="oss_id"/>
+        <result property="activityId" column="activity_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+
+</mapper>
